@@ -11,34 +11,15 @@ namespace my_code {
 } // create namespace with stuff
 
 
-//first edit after initial commit, second commit
-//third commit
-//fourth commit
 using namespace std;
 
 
 
-vector1::vector1(int s)
-{
-	//vector1::vector1(int s) : elem{ new double[s] }, sz{ s } 
-	if (s < 0) throw length_error{"length error"};
-	elem = new double[s];
-	sz = s;
 
 
-} //constructor, created on the heap, vector1 object will always be the same size
 
-double& vector1::operator[](int i)
-{
-	if (i < 0 || size() <= i) throw out_of_range{"vector1::operator[]"};
-	return elem[i];
-}
 
-int vector1::size()
-{
-	return sz;
-}
-
+/*
 
 void f1(vector1 v) {
 	try {
@@ -64,7 +45,7 @@ void test_vector1()
 	}
 }
 
-
+*/
 
 
 
@@ -93,7 +74,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	
 	printf("hello world\n");
 
-	f1(v1);
+//	f1(v1);
 
 	return 0;
 }

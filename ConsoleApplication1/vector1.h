@@ -1,4 +1,5 @@
-
+//#ifndef VECTOR1_H
+//#define VECTOR1_H
 
 class vector1 {
 public:
@@ -10,3 +11,5 @@ private:
 	double* elem; // pointer to array of sz doubles
 	int sz; // number of elements
 };
+
+//#endif
